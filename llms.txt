@@ -1,0 +1,209 @@
+# Social Planning
+
+> A social planning application built with Node.js
+
+## Architecture
+
+**Status:** Early stage - architecture evolving
+
+**Design Philosophy:**
+- Start simple, add complexity only when needed
+- Build for clarity and maintainability
+- Document decisions as they're made
+
+## Technology Stack
+
+**Backend:** Node.js (to be configured)
+**Frontend:** To be determined
+**Database:** To be determined
+**Deployment:** To be determined
+
+**Testing:** To be configured
+**Build Tools:** To be configured
+
+## Core Principles
+
+### 1. Simplicity Over Cleverness
+
+**Why:** Code is read far more often than it's written. Simple, obvious solutions are easier to understand, debug, and maintain.
+
+**Example:** Prefer explicit conditionals over complex ternaries. Choose clear variable names over short abbreviations.
+
+**Applied:** To be demonstrated in first features
+
+### 2. Test-Driven Development
+
+**Coverage Target:** To be established based on project needs
+
+**Testing Strategy:**
+- Write tests as you build features
+- Test business logic thoroughly
+- Balance coverage with pragmatism
+- Document testing patterns in CLAUDE.md
+
+**Status:** Testing framework to be configured
+
+### 3. Documentation as Code
+
+**Knowledge Capture:**
+- CLAUDE.md captures coding patterns and conventions
+- llms.txt captures architecture decisions and principles
+- Comments explain "why", not "what"
+- README explains setup and usage
+
+**Compounding Effect:** Each documented pattern makes future development faster
+
+### 4. Progressive Enhancement
+
+**Approach:** Build core functionality first, add enhancements incrementally
+
+**Benefits:**
+- Faster time to working prototype
+- Easier to validate assumptions
+- Clear upgrade path
+
+---
+
+## Key Decisions
+
+### Decision Template
+
+Use this template when documenting important decisions:
+
+**Decision:** [What was decided]
+**Context:** [Why it matters, what alternatives were considered]
+**Date:** [When decided]
+**Status:** Active | Superseded | Under Review
+
+---
+
+## API Design
+
+**Status:** To be established
+
+When API patterns emerge, document:
+- Endpoint naming conventions
+- Request/response formats
+- Error handling approach
+- Authentication/authorization
+- Versioning strategy
+- Rate limiting
+
+---
+
+## Database Design
+
+**Status:** To be established
+
+When database patterns emerge, document:
+- Schema design principles
+- Migration strategy
+- Query optimization patterns
+- Relationship modeling
+- Data validation approach
+
+---
+
+## Security Considerations
+
+**Status:** To be implemented
+
+Security checklist:
+- [ ] Input validation and sanitization
+- [ ] Authentication mechanism
+- [ ] Authorization rules
+- [ ] Data encryption (at rest and in transit)
+- [ ] Secure session management
+- [ ] SQL injection prevention
+- [ ] XSS prevention
+- [ ] CSRF protection
+- [ ] Rate limiting
+- [ ] Security headers
+
+**Document:** Security patterns as they're implemented
+
+---
+
+## Performance Guidelines
+
+**Status:** To be established
+
+Performance considerations:
+- [ ] Database query optimization
+- [ ] Caching strategy
+- [ ] Asset optimization
+- [ ] API response times
+- [ ] Resource usage monitoring
+
+**Document:** Performance patterns and benchmarks as you build
+
+---
+
+## Error Handling
+
+**Status:** To be established
+
+Error handling approach:
+- Error types and classifications
+- Logging strategy
+- User-facing error messages
+- Debug information capture
+- Recovery strategies
+
+**Document:** Error patterns as they emerge
+
+---
+
+## Development Workflow
+
+**Compounding Engineering Process:**
+
+1. **Plan:** Create detailed PRD in `tasks/` directory
+2. **Work:** Execute systematically, update status in real-time
+3. **Review:** Multi-agent code review before merging
+4. **Learn:** Document patterns in CLAUDE.md and learnings in `knowledge/learnings/`
+
+**Git Workflow:**
+- Main branch: `main`
+- Feature branches: descriptive names
+- Commit messages: clear, descriptive
+- PRs: include context and testing notes
+
+---
+
+## Future Considerations
+
+### Architecture
+
+- [ ] Determine frontend framework (React, Vue, etc.)
+- [ ] Choose database (PostgreSQL, MongoDB, etc.)
+- [ ] Select hosting/deployment platform
+- [ ] Configure CI/CD pipeline
+- [ ] Set up monitoring and logging
+
+### Features
+
+- [ ] Define core functionality
+- [ ] Plan user authentication
+- [ ] Design data models
+- [ ] Establish API contracts
+
+### Technical Debt
+
+**Philosophy:** Track technical debt explicitly, pay it down regularly
+
+- [ ] No known technical debt yet
+
+---
+
+## References
+
+- **CLAUDE.md:** Coding patterns and conventions
+- **knowledge/learnings/:** Feature-specific learnings
+- **Compounding Engineering:** [Article](https://every.to/source-code/my-ai-had-already-fixed-the-code-before-i-saw-it)
+
+---
+
+Last updated: 2025-11-16
+
+**Remember:** This file evolves with your understanding of the system. Update it whenever you make architectural decisions, and it will guide consistent development as the project grows.

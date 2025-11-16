@@ -1,0 +1,5 @@
+# Mark knowledge files as documentation for GitHub linguist
+CLAUDE.md linguist-documentation
+llms.txt linguist-documentation
+knowledge/** linguist-documentation
+tasks/** linguist-documentation
